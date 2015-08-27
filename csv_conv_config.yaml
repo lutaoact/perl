@@ -1,0 +1,6 @@
+--- 
+ability: 
+  - group_id
+ability_card: 
+  - group_id
+  - ability_id

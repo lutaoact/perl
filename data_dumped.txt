@@ -1,0 +1,10 @@
+%hash = (
+          'barney' => 'Rubble',
+          'Fred' => 'Flintstone'
+        );
+@array = (
+           'Fred',
+           'Flintstone',
+           'Barney',
+           'Rubble'
+         );

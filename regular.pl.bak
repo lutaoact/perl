@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+while(<>)
+{
+    chomp;
+    my $regex = eval {qr/$_/};
+    die $@ if $@;
+    print "Regex ---> $regex\n";
+    print $regex->isa('Regexp'), "\n";
+    print ref($regex), "\n";
+}
