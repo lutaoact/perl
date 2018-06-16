@@ -1,0 +1,14 @@
+use warnings;
+use strict;
+
+my $x = 0x87654321;
+
+# 取最低有效字节，其它bit置0
+printf("0x%x 0x%x\n", $x, ($x & 0xFF));
+
+# 最低有效字节保持不变，其它bit都取补
+printf("0x%x 0x%x\n", $x, ($x ^ ~0xFF));
+printf("0x%x 0x%x\n", $x, ($x & 0xFF | ~($x | 0xFF)));
+
+# 最低有效字节全置1
+printf("0x%x 0x%x\n", $x, ($x | 0xFF));
